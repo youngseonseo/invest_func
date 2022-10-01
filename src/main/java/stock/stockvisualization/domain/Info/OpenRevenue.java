@@ -4,7 +4,7 @@ import stock.stockvisualization.domain.company.Company;
 
 
 public class OpenRevenue {
-    public String openRevenue(Company company){
+    public final String openRevenue(Company company){
         // 증가율 : (당기 / 전기 - 1) * 100
         float 영업이익증가율 = (((float)company.thstrm_amount/ (float)company.frmtrm_amount - 1) * 100);
         String diff_ans = "";

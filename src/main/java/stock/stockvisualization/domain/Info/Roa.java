@@ -4,7 +4,7 @@ import stock.stockvisualization.domain.company.Company;
 
 public class Roa {
 
-    public String roa(Company company){
+    public final String roa(Company company){
         // 공식 : 순이익/자산*100
         // 증가율 : (당기 / 전기 - 1) * 100
         float 총자산순이익률 = Float.parseFloat(String.valueOf(company.account_nm.equals("당기순이익")))/ Float.parseFloat(String.valueOf(company.account_nm.equals("자본총계"))) * 100;

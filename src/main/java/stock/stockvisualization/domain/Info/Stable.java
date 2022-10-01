@@ -3,7 +3,7 @@ package stock.stockvisualization.domain.Info;
 import stock.stockvisualization.domain.company.Company;
 
 public class Stable {
-    public String stable(Company company){
+    public final String stable(Company company){
         float 부채비율 =(Float.parseFloat(String.valueOf(company.account_nm.equals("부채총계")))) / (Float.parseFloat(String.valueOf(company.account_nm.equals("자본총계"))))* 100;
         if(부채비율 < 50){
             return "우량";

@@ -4,7 +4,7 @@ import stock.stockvisualization.domain.company.Company;
 
 public class ReserveRatio {
 
-    public String reserveRatio(Company company){
+    public final String reserveRatio(Company company){
         float 유보율 = (Float.parseFloat(String.valueOf(company.account_nm.equals("자본총계"))) - Float.parseFloat(String.valueOf(company.account_nm.equals("자본금")))) / Float.parseFloat(String.valueOf(company.account_nm.equals("자본금"))) * 100;
         String ans;
         if(유보율 >= 0){

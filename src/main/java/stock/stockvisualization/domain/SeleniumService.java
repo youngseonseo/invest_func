@@ -95,7 +95,8 @@ public class SeleniumService {
             com.setThstrm_amount(Integer.parseInt(thstrm_amount.substring(0, thstrm_amount.length()-6)));
             String frmtrm_amount = ((JSONObject) list.get(0)).get("frmtrm_amount").toString().replace(",", "");
             com.setFrmtrm_amount(Integer.parseInt(frmtrm_amount.substring(0, frmtrm_amount.length()-6)));
-
+            String account_nm = ((JSONObject) list.get(0)).get("account_nm").toString().replace(",", "");
+            com.setThstrm_amount(Integer.parseInt(account_nm.substring(0, thstrm_amount.length()-6)));
 
 
         return com;

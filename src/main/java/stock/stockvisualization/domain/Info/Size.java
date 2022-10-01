@@ -3,7 +3,7 @@ package stock.stockvisualization.domain.Info;
 import stock.stockvisualization.domain.company.Company;
 
 public class Size {
-    public String size(Company company){
+    public final String size(Company company){
 
         if((Float.parseFloat(String.valueOf(company.account_nm.equals("자본총계")))) >= 5000000000000L){
             return "대";
